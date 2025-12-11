@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Mandale Feria</title>
+</head>
+
+<body class="bg-orange-50">
+    <div class="fixed top-0 bg-white shadow-md py-6 flex flex-row items-center justify-center w-full">
+        <img src="./Assets/feria-logo.png" alt="">
+    </div>
+    <section id="hero" class="container mx-auto mt-32 pb-10 sm:pb-0 flex flex-col-reverse sm:flex-row items-center justify-center gap-10 px-4 sm:px-0">
+        <div class="sm:w-1/2 w-full">
+            <img class="h-[900px] ml-auto" src='./Assets/flyer-navidad.jpg' alt="">
+        </div>
+        <div class="sm:w-1/2 w-full">
+            <form action="https://script.google.com/macros/s/AKfycbzeHcmAe04yU1IF8-cwbjKiYG-WyHdSsCToe004etT_MMPQ1JFqQIbXJ3Q68LI4HOZ_sQ/exec" method="POST"
+                class="max-w-xl mx-auto p-6 bg-white shadow-lg rounded-lg space-y-4">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Registro ingresantes</h2>
+
+                <div>
+                    <label for="nombre_apellido" class="block text-sm font-medium text-gray-700">Nombre y
+                        Apellido:</label>
+                    <input type="text" id="nombre_apellido" name="NombreApellido" required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="mail" class="block text-sm font-medium text-gray-700">Email:</label>
+                    <input type="email" id="mail" name="Email" required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="celular" class="block text-sm font-medium text-gray-700">Celular:</label>
+                    <input type="tel" id="celular" name="Celular" required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <p class="text-sm font-medium text-gray-700 mb-2">¿De dónde nos conoces?</p>
+
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input id="conocido_redes" name="ConocidoPor" type="radio" value="Redes" required
+                                class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                            <label for="conocido_redes" class="ml-3 block text-sm font-medium text-gray-700">
+                                Redes Sociales
+                            </label>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input id="conocido_amigos" name="ConocidoPor" type="radio" value="Por Amigos"
+                                class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                            <label for="conocido_amigos" class="ml-3 block text-sm font-medium text-gray-700">
+                                Por Amigos
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="edad" class="block text-sm font-medium text-gray-700">Edad:</label>
+                    <input type="number" id="edad" name="Edad" min="10" max="120"
+                        class="mt-1 block w-1/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="acompanantes" class="block text-sm font-medium text-gray-700">¿Con cuántas personas
+                        viniste? (sin contarte a vos):</label>
+                    <select id="acompanantes" name="Acompanantes"
+                        class="mt-1 block w-1/4 pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                        <option value="0">0 (Vine solo/a)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4 o más</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="intereses" class="block text-sm font-medium text-gray-700">¿Qué es lo que más te
+                        interesa de esta feria?</label>
+                    <textarea id="intereses" name="Intereses" rows="3"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                </div>
+
+                <div class="pt-5">
+                    <button type="submit"
+                        class="w-full justify-center py-2 px-4 border border-transparent shadow-sm text-md font-medium rounded-md text-white bg-amber-400 hover:bg-amber-600 hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500">
+                        Enviar Formulario
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
