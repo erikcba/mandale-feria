@@ -9,20 +9,17 @@
 </head>
 
 <body class="bg-orange-50">
+
     <div class="fixed top-0 bg-white shadow-md py-6 flex flex-row items-center justify-center w-full">
         <img src="./Assets/feria-logo.png" alt="">
     </div>
     <section id="hero"
         class="container mx-auto mt-32 pb-10 sm:pb-0 flex flex-col-reverse sm:flex-row items-center justify-center gap-10 px-4 sm:px-0">
-        <div class="sm:w-1/2 w-full">
-            <img class="h-[900px] ml-auto" src='./Assets/flyer-navidad.jpg' alt="">
-        </div>
-        <div class="sm:w-1/2 w-full">
+        <div class=" w-full">
             <form
-                action="https://script.google.com/macros/s/AKfycbzeHcmAe04yU1IF8-cwbjKiYG-WyHdSsCToe004etT_MMPQ1JFqQIbXJ3Q68LI4HOZ_sQ/exec"
+                action="https://script.google.com/macros/s/AKfycbyKwLAuI8X5VH5SSg5Y_8oFQvGP6MgGH6Tq5lkzgyEFTBEMJqE_2FJW67Y26LM0uEEYlg/exec"
                 method="POST" class="max-w-xl mx-auto p-6 bg-white shadow-lg rounded-lg space-y-4">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6">Registro ingresantes</h2>
-
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Acreditacion + Sorteo</h2>
                 <div>
                     <label for="nombre_apellido" class="block text-sm font-medium text-gray-700">Nombre y
                         Apellido:</label>
@@ -39,6 +36,18 @@
                 <div>
                     <label for="celular" class="block text-sm font-medium text-gray-700">Celular:</label>
                     <input type="tel" id="celular" name="Celular" required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="edad" class="block text-sm font-medium text-gray-700">Edad:</label>
+                    <input type="number" id="edad" name="Edad" min="10" max="120"
+                        class="mt-1 block w-1/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="instagram" class="block text-sm font-medium text-gray-700">Instagram:</label>
+                    <input type="text" id="instagram" name="instagram" 
                         class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 </div>
 
@@ -64,31 +73,6 @@
                     </div>
                 </div>
 
-                <div>
-                    <label for="edad" class="block text-sm font-medium text-gray-700">Edad:</label>
-                    <input type="number" id="edad" name="Edad" min="10" max="120"
-                        class="mt-1 block w-1/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                </div>
-
-                <div>
-                    <label for="acompanantes" class="block text-sm font-medium text-gray-700">¿Con cuántas personas
-                        viniste?:</label>
-                    <select id="acompanantes" name="Acompanantes"
-                        class="mt-1 block pl-3 pr-10 py-2 text-base  border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4+">4 o más</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="intereses" class="block text-sm font-medium text-gray-700">¿Qué es lo que más te
-                        interesa de esta feria?</label>
-                    <textarea id="intereses" name="Intereses" rows="3"
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
-                </div>
 
                 <div class="pt-5">
                     <button type="submit"
@@ -97,22 +81,6 @@
                     </button>
                 </div>
             </form>
-        </div>
-    </section>
-    <section id="btn_sorteo" class="pt-10 px-4">
-        <div class="container mx-auto rounded-lg shadow-lg py-6 mx-4 mb-8 bg-white">
-            <h2 class="text-center text-3xl font-bold text-gray-800 mb-6 mt-10">
-                Participa del sorteo!
-            </h2>
-            <p class="text-center text-gray-700 mb-6 px-4">
-                Apreta el boton de abajo para anotarte y participá por el sorteo de increíbles premios
-            </p>
-            <div class="flex justify-center mb-10">
-                <a href="./acreditacion.html"
-                    class="py-3 px-6 bg-amber-400 text-white font-semibold rounded-lg shadow-md hover:bg-amber-600 hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500">
-                    Ir al Sorteo
-                </a>
-            </div>
         </div>
     </section>
 </body>
